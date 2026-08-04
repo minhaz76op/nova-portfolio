@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-white/10;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: transparent;
+  }
+
+  body {
+    @apply min-h-screen overflow-x-hidden bg-transparent font-body text-slate-200 antialiased;
+    background-color: transparent;
+    background-image: none;
+    background-attachment: scroll;
+  }
+
+  #root {
+    min-height: 100%;
+    background: transparent;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-[0.04em];
+    letter-spacing: 0.04em;
+  }
+
+  ::selection {
+    background: rgba(248, 113, 113, 0.28);
+    color: #f8fafc;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgba(248, 113, 113, 0.8);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #080606;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(248, 113, 113, 0.42), rgba(127, 29, 29, 0.42));
+    border-radius: 999px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-red-500/20 bg-black/40 backdrop-blur-md shadow-[0_22px_65px_-24px_rgba(2,6,23,0.95)];
+  }
+
+  .glass-panel {
+    @apply glass rounded-[1.5rem];
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-white via-slate-100 to-red-400 bg-clip-text text-transparent;
+  }
+
+  .section-eyebrow {
+    @apply font-mono text-[10px] uppercase tracking-[0.45em] text-red-400/80;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-red-400/30 bg-gradient-to-r from-red-500 via-rose-500 to-amber-600 px-6 py-3 font-medium text-slate-950 shadow-[0_0_25px_rgba(248,113,113,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(248,113,113,0.35)] active:scale-[0.96];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-red-500/20 bg-[#140b0d]/70 px-6 py-3 font-medium text-slate-100 backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:border-red-400/40 hover:text-red-100 hover:shadow-[0_0_18px_rgba(248,113,113,0.2)];
+  }
+
+  .ambient-dot {
+    @apply pointer-events-none absolute rounded-full blur-[90px] opacity-70;
+    animation: drift 16s ease-in-out infinite;
+  }
+
+  .section-shell {
+    @apply relative rounded-[2rem] border border-red-500/10 bg-black/40 p-6 shadow-[0_25px_90px_-34px_rgba(2,6,23,0.95)] backdrop-blur-md;
+  }
+}
