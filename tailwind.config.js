@@ -21,6 +21,7 @@ export default {
         },
       },
       fontFamily: {
+        syne: ['"Syne"', 'sans-serif'],
         display: ['"Orbitron"', '"Rajdhani"', 'sans-serif'],
         body: ['"Rajdhani"', '"Inter"', 'sans-serif'],
         mono: ['"IBM Plex Mono"', '"Fira Code"', 'monospace'],

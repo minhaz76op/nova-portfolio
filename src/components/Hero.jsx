@@ -32,7 +32,7 @@ export default function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-[#140b0d]/70 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.35em] text-red-300/80 backdrop-blur-xl"
           >
             <span className="h-2 w-2 rounded-full bg-red-400" />
-            CSE Student & Android Developer
+            Software Engineer & App Developer
           </motion.div>
 
           <motion.h1
@@ -40,11 +40,14 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={1}
-            className="text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl"
+            className="leading-tight text-white"
           >
-            MD. MINHAJUL ISLAM
-            <br />
-            <span className="text-gradient text-3xl sm:text-4xl lg:text-5xl font-medium">Software & AI Solutions</span>
+            <span className="block font-syne text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white whitespace-nowrap drop-shadow-[0_0_35px_rgba(255,255,255,0.18)]">
+              MD. MINHAJUL ISLAM
+            </span>
+            <span className="block font-display text-gradient text-lg sm:text-2xl lg:text-3xl font-semibold mt-3 tracking-wide whitespace-nowrap">
+              Software Engineer &amp; App Developer
+            </span>
           </motion.h1>
 
           <motion.p
@@ -52,9 +55,9 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={2}
-            className="mt-6 max-w-md text-lg leading-relaxed text-slate-400"
+            className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-slate-400"
           >
-            Computer Science & Engineering student at Daffodil International University skilled in Python, C, HTML, Kotlin, Android Development, and Prompt Engineering.
+            Passionate Mobile &amp; Frontend Developer specializing in high-performance Android apps (Kotlin) and modern web applications (React / Next.js). Skilled in crafting clean code, responsive UI/UX and robust Firebase backends to solve real-world problems. Always exploring new tech and pushing creative boundaries.
           </motion.p>
 
           <motion.div

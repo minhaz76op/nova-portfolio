@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Md. Minhajul Islam',
-  title: 'Computer Science & Engineering Student',
+  title: 'Software Engineer & App Developer',
   subtitle: 'Android Developer & Prompt Engineering Enthusiast',
   location: 'Sheujgari, Bogura, Bangladesh',
   email: 'minhazofficial5576@gmail.com',
@@ -9,7 +9,7 @@ export const profile = {
   github: 'https://github.com/minhaz76op',
   instagram: 'https://www.instagram.com/mn_hz.5576/',
   facebook: 'https://www.facebook.com/minhazOFF76',
-  bio: 'Computer Science & Engineering (CSE) student with skills in Python, C, HTML, Kotlin, Android Development, and Prompt Engineering. Passionate about software development, AI technologies, and building practical digital solutions. Eager to apply technical knowledge and continuously enhance problem-solving abilities.',
+  bio: 'Passionate Mobile & Frontend Developer specializing in high-performance Android apps (Kotlin) and modern web applications (React / Next.js). Skilled in crafting clean code, responsive UI/UX and robust Firebase backends to solve real-world problems. Always exploring new tech and pushing creative boundaries.',
 }
 
 export const experience = [
@@ -42,95 +42,116 @@ export const experience = [
   },
 ]
 
-export const education = [
-  {
-    id: 'edu-1',
-    institution: 'DAFFODIL INTERNATIONAL UNIVERSITY',
-    degree: 'B.Sc in Computer Science & Engineering',
-    period: '2025 — 2028',
-    details: 'Currently pursuing undergraduate degree focusing on software development, algorithms, and AI technologies.',
-  },
-  {
-    id: 'edu-2',
-    institution: 'GOVT. SHAH SULTAN COLLEGE, BOGURA',
-    degree: 'Science (HSC)',
-    period: '2021 — 2023',
-    grade: 'GPA: 5.0 / 5.0',
-    details: 'Higher Secondary Certificate with maximum GPA distinction in Science.',
-  },
-  {
-    id: 'edu-3',
-    institution: 'BOGURA CANTONMENT PUBLIC SCHOOL & COLLEGE, BOGURA',
-    degree: 'Science (SSC)',
-    period: '2019 — 2021',
-    grade: 'GPA: 5.0 / 5.0',
-    details: 'Secondary School Certificate with perfect GPA distinction in Science.',
-  },
-]
 
-export const languages = [
-  { name: 'Bangla', proficiency: 'Native' },
-  { name: 'English', proficiency: 'Professional Working Proficiency' },
-]
 
 export const skills = [
   {
     name: 'Python',
-    category: 'Programming Languages',
+    category: 'Programming & Development',
     level: 'Proficient',
     timeline: '2023 - Present',
     description: 'Used for software development, script automation, data manipulation, and building core programming logic.',
   },
   {
     name: 'C Programming',
-    category: 'Programming Languages',
+    category: 'Programming & Development',
     level: 'Intermediate',
     timeline: '2023 - Present',
-    description: 'Foundational programming language for low-level memory, algorithms, and computer science fundamentals.',
+    description: 'Foundational programming language for low-level memory concepts, algorithms, and computer science fundamentals.',
   },
   {
     name: 'Kotlin',
-    category: 'Programming Languages',
+    category: 'Programming & Development',
     level: 'Proficient',
     timeline: '2024 - Present',
-    description: 'Primary modern language for building Android applications with clean syntax, safety, and modern conciseness.',
+    description: 'Primary modern language for building Android applications with clean syntax, null safety, and concise code.',
   },
   {
     name: 'Android Development (Android Studio)',
-    category: 'Mobile Development',
+    category: 'Programming & Development',
     level: 'Intermediate',
     timeline: '2024 - Present',
     description: 'Hands-on development of native mobile applications, interface layouts, debugging techniques, and app prototypes.',
   },
   {
     name: 'HTML',
-    category: 'Web Basics',
+    category: 'Programming & Development',
     level: 'Proficient',
     timeline: '2023 - Present',
-    description: 'Structuring web interfaces, semantic components, and foundational front-end page structures.',
+    description: 'Structuring web interfaces, semantic components, and foundational front-end page layouts.',
   },
   {
     name: 'Prompt Engineering',
-    category: 'AI & Generative Tools',
+    category: 'AI & Prompt Engineering',
     level: 'Advanced Enthusiast',
     timeline: '2025 - Present',
-    description: 'Designing structured and refined prompts to optimize performance, output accuracy, and creative AI workflows.',
+    description: 'Designing structured and refined prompts to optimize LLM performance, output accuracy, and creative AI workflows.',
   },
   {
     name: 'AI Content Generation',
-    category: 'AI & Generative Tools',
+    category: 'AI & Prompt Engineering',
     level: 'Intermediate',
     timeline: '2025 - Present',
-    description: 'Generating text, audio, and visual assets using modern AI productivity and automation tools.',
+    description: 'Generating text, audio, and visual assets using modern AI productivity and automation platforms.',
   },
   {
     name: 'Generative AI Tools (ChatGPT, Gemini, Claude)',
-    category: 'AI & Generative Tools',
+    category: 'AI & Prompt Engineering',
     level: 'Advanced',
     timeline: '2025 - Present',
     description: 'Utilizing ChatGPT, Gemini, Claude, and Suno for software development assistance, research, and content optimization.',
   },
+  {
+    name: 'Photography',
+    category: 'Creative & Media',
+    level: 'Intermediate',
+    timeline: '2016 - Present',
+    description: 'Capturing visual content with a focus on composition, perspective, lighting, and post-production color grading.',
+  },
+  {
+    name: 'Videography',
+    category: 'Creative & Media',
+    level: 'Intermediate',
+    timeline: '2018 - Present',
+    description: 'Shooting and editing dynamic video content, focusing on visual pacing, camera movement, and visual storytelling.',
+  },
+  {
+    name: 'PUBG',
+    category: 'Gaming',
+    level: 'Competitive',
+    timeline: '2018 - Present',
+    description: 'Strategic battle royale gameplay focusing on squad coordination, tactical positioning, and rapid decision-making.',
+  },
+  {
+    name: 'Call of Duty',
+    category: 'Gaming',
+    level: 'Competitive',
+    timeline: '2021 - Present',
+    description: 'Fast-paced FPS action emphasizing weapon control, tactical awareness, and sharp reflex mechanics.',
+  },
+  {
+    name: 'eFootball',
+    category: 'Gaming',
+    level: 'Advanced',
+    timeline: '2020 - Present',
+    description: 'Tactical football simulation focusing on squad management, precision passing, and match tactics.',
+  },
+  {
+    name: 'GTA V',
+    category: 'Gaming',
+    level: 'Enthusiast',
+    timeline: '2024 - Present',
+    description: 'Open-world exploration, driving physics, mission strategies, and immersive gameplay in Grand Theft Auto V.',
+  },
+  {
+    name: 'Clash of Clans',
+    category: 'Gaming',
+    level: 'Strategic',
+    timeline: '2017 - Present',
+    description: 'Base building, resource management, clan strategy, and coordinated tactical war attacks in Clash of Clans.',
+  },
 ]
+
 
 
 
