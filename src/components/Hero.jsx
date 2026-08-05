@@ -29,10 +29,10 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={0}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-[#140b0d]/70 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.35em] text-red-300/80 backdrop-blur-xl"
+            className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-red-500/20 bg-[#140b0d]/70 px-3.5 py-2 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.35em] text-red-300/80 backdrop-blur-xl"
           >
-            <span className="h-2 w-2 rounded-full bg-red-400" />
-            Software Engineer & App Developer
+            <span className="h-2 w-2 shrink-0 rounded-full bg-red-400" />
+            <span className="truncate">Software Engineer &amp; App Developer</span>
           </motion.div>
 
           <motion.h1
@@ -40,12 +40,12 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={1}
-            className="leading-tight text-white"
+            className="leading-tight text-white max-w-full overflow-hidden"
           >
-            <span className="block font-syne text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white whitespace-nowrap drop-shadow-[0_0_35px_rgba(255,255,255,0.18)]">
+            <span className="block font-syne text-[clamp(1.35rem,6.2vw,3.75rem)] font-extrabold tracking-tight text-white sm:whitespace-nowrap drop-shadow-[0_0_35px_rgba(255,255,255,0.18)] break-words">
               MD. MINHAJUL ISLAM
             </span>
-            <span className="block font-display text-gradient text-lg sm:text-2xl lg:text-3xl font-semibold mt-3 tracking-wide whitespace-nowrap">
+            <span className="block font-display text-gradient text-base sm:text-2xl lg:text-3xl font-semibold mt-2.5 tracking-wide sm:whitespace-nowrap break-words">
               Software Engineer &amp; App Developer
             </span>
           </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={2}
-            className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-slate-400"
+            className="mt-6 max-w-xl text-sm sm:text-lg leading-relaxed text-slate-400"
           >
             Passionate Mobile &amp; Frontend Developer specializing in high-performance Android apps (Kotlin) and modern web applications (React / Next.js). Skilled in crafting clean code, responsive UI/UX and robust Firebase backends to solve real-world problems. Always exploring new tech and pushing creative boundaries.
           </motion.p>
@@ -65,16 +65,16 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={3}
-            className="mt-9 flex flex-wrap items-center gap-4"
+            className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4"
           >
-            <motion.a href="#work" className="btn-primary" whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.96 }} transition={spring}>
+            <motion.a href="#work" className="btn-primary text-sm sm:text-base px-5 py-2.5 sm:px-6 sm:py-3" whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.96 }} transition={spring}>
               View my work
               <ArrowRight size={18} />
             </motion.a>
             <motion.a
               href="/resume.pdf"
               download="Minhazul-Islam-Resume.pdf"
-              className="btn-secondary"
+              className="btn-secondary text-sm sm:text-base px-5 py-2.5 sm:px-6 sm:py-3"
               whileHover={{ y: -2, scale: 1.01 }}
               whileTap={{ scale: 0.96 }}
               transition={spring}
@@ -82,7 +82,7 @@ export default function Hero() {
               <Download size={18} />
               Download CV
             </motion.a>
-            <motion.a href="#contact" className="btn-secondary" whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.96 }} transition={spring}>
+            <motion.a href="#contact" className="btn-secondary text-sm sm:text-base px-5 py-2.5 sm:px-6 sm:py-3" whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.96 }} transition={spring}>
               Contact me
               <Mail size={18} />
             </motion.a>
@@ -93,29 +93,31 @@ export default function Hero() {
             initial="hidden"
             animate="show"
             custom={4}
-            className="mt-10 flex items-center gap-5 text-slate-400"
+            className="mt-9 flex flex-wrap items-center gap-3 sm:gap-5 text-slate-400"
           >
-            {[
-              { href: 'https://github.com/minhaz76op', label: 'GitHub', icon: Github },
-              { href: 'https://www.linkedin.com/in/md-minhajul-islam5576/', label: 'LinkedIn', icon: Linkedin },
-              { href: 'https://www.instagram.com/mn_hz.5576/', label: 'Instagram', icon: Instagram },
-              { href: 'https://www.facebook.com/minhazOFF76', label: 'Facebook', icon: Facebook },
-            ].map(({ href, label, icon: Icon }) => (
-              <motion.a
-                key={label}
-                href={href}
-                aria-label={label}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-red-500/15 bg-[#140b0d]/70 p-2.5 transition-all duration-300 hover:-translate-y-1 hover:border-red-400/40 hover:text-red-300"
-                whileHover={{ y: -4, scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Icon size={18} />
-              </motion.a>
-            ))}
-            <span className="h-4 w-px bg-white/10" />
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-slate-500">Based in Bogura, Bangladesh</span>
+            <div className="flex items-center gap-3">
+              {[
+                { href: 'https://github.com/minhaz76op', label: 'GitHub', icon: Github },
+                { href: 'https://www.linkedin.com/in/md-minhajul-islam5576/', label: 'LinkedIn', icon: Linkedin },
+                { href: 'https://www.instagram.com/mn_hz.5576/', label: 'Instagram', icon: Instagram },
+                { href: 'https://www.facebook.com/minhazOFF76', label: 'Facebook', icon: Facebook },
+              ].map(({ href, label, icon: Icon }) => (
+                <motion.a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-red-500/15 bg-[#140b0d]/70 p-2.5 transition-all duration-300 hover:-translate-y-1 hover:border-red-400/40 hover:text-red-300"
+                  whileHover={{ y: -4, scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Icon size={18} />
+                </motion.a>
+              ))}
+            </div>
+            <span className="hidden sm:inline-block h-4 w-px bg-white/10" />
+            <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.25em] text-slate-500">Based in Bogura, Bangladesh</span>
           </motion.div>
         </div>
 
