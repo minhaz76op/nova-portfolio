@@ -42,10 +42,10 @@ export default function Hero() {
             custom={1}
             className="leading-tight text-white max-w-full overflow-hidden"
           >
-            <span className="block font-syne text-[clamp(1.35rem,6.2vw,3.75rem)] font-extrabold tracking-tight text-white sm:whitespace-nowrap drop-shadow-[0_0_35px_rgba(255,255,255,0.18)] break-words">
+            <span className="block font-syne text-[clamp(1.05rem,5vw,3.75rem)] font-extrabold tracking-tighter sm:tracking-tight text-white whitespace-nowrap drop-shadow-[0_0_35px_rgba(255,255,255,0.18)]">
               MD. MINHAJUL ISLAM
             </span>
-            <span className="block font-display text-gradient text-base sm:text-2xl lg:text-3xl font-semibold mt-2.5 tracking-wide sm:whitespace-nowrap break-words">
+            <span className="block font-display text-gradient text-[clamp(0.8rem,3.8vw,1.875rem)] font-semibold mt-2 tracking-normal sm:tracking-wide whitespace-nowrap">
               Software Engineer &amp; App Developer
             </span>
           </motion.h1>
