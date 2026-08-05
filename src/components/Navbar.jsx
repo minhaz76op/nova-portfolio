@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Download } from 'lucide-react'
 
 const links = [
   { label: 'Work', href: '#work' },
@@ -52,15 +52,28 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <motion.a
-          href="#contact"
-          className="hidden md:inline-flex btn-primary !px-5 !py-2 text-sm"
-          whileHover={{ y: -2, scale: 1.01, boxShadow: '0 0 24px rgba(248, 113, 113, 0.4)' }}
-          whileTap={{ scale: 0.96 }}
-          transition={spring}
-        >
-          Let&rsquo;s talk
-        </motion.a>
+        <div className="hidden md:flex items-center gap-3">
+          <motion.a
+            href="/resume.pdf"
+            download="Minhazul-Islam-Resume.pdf"
+            className="btn-secondary !px-4 !py-2 text-sm gap-2"
+            whileHover={{ y: -2, scale: 1.01 }}
+            whileTap={{ scale: 0.96 }}
+            transition={spring}
+          >
+            <Download size={15} />
+            Resume
+          </motion.a>
+          <motion.a
+            href="#contact"
+            className="btn-primary !px-5 !py-2 text-sm"
+            whileHover={{ y: -2, scale: 1.01, boxShadow: '0 0 24px rgba(248, 113, 113, 0.4)' }}
+            whileTap={{ scale: 0.96 }}
+            transition={spring}
+          >
+            Let&rsquo;s talk
+          </motion.a>
+        </div>
 
         <button
           className="rounded-full border border-red-500/15 bg-[#140b0d]/70 p-2 text-slate-200 md:hidden"
@@ -88,13 +101,24 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            onClick={() => setOpen(false)}
-            className="mt-2 flex justify-center btn-primary text-sm"
-          >
-            Let&rsquo;s talk
-          </a>
+          <div className="mt-3 flex flex-col gap-2">
+            <a
+              href="/resume.pdf"
+              download="Minhazul-Islam-Resume.pdf"
+              onClick={() => setOpen(false)}
+              className="flex justify-center items-center gap-2 btn-secondary text-sm"
+            >
+              <Download size={16} />
+              Download Resume
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="flex justify-center btn-primary text-sm"
+            >
+              Let&rsquo;s talk
+            </a>
+          </div>
         </motion.div>
       )}
     </motion.header>

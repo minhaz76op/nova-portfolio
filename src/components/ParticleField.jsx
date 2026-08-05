@@ -53,14 +53,15 @@ function Particles() {
 
 export default function ParticleField() {
   return (
-    <div className="pointer-events-none fixed inset-0 -z-10">
+    <div className="pointer-events-none fixed inset-0 -z-10 transform-gpu">
       <Canvas
-        dpr={[1, 1.5]}
+        dpr={[1, Math.min(2, typeof window !== 'undefined' ? window.devicePixelRatio : 1.5)]}
         camera={{ position: [0, 0, 5], fov: 60 }}
-        gl={{ alpha: true, antialias: false }}
+        gl={{ alpha: true, antialias: false, powerPreference: 'high-performance', precision: 'mediump' }}
       >
         <Particles />
       </Canvas>
     </div>
   )
 }
+

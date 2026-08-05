@@ -6,6 +6,7 @@ export default function BackgroundVideo() {
         loop
         muted
         playsInline
+        preload="metadata"
         className="w-full h-full object-cover scale-105 filter blur-[2px] md:blur-[3px] brightness-[0.6] contrast-110 transition-all duration-300"
       >
         <source src="/bg-wallpaper.mp4" type="video/mp4" />

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Mail, Github, Linkedin, Instagram, Facebook } from 'lucide-react'
+import { ArrowRight, Mail, Github, Linkedin, Instagram, Facebook, Download } from 'lucide-react'
 import SketchfabEmbed from './SketchfabEmbed.jsx'
 
 const fadeUp = {
@@ -32,7 +32,7 @@ export default function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-[#140b0d]/70 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.35em] text-red-300/80 backdrop-blur-xl"
           >
             <span className="h-2 w-2 rounded-full bg-red-400" />
-            App Developer & UI/UX Specialist
+            CSE Student & Android Developer
           </motion.div>
 
           <motion.h1
@@ -42,9 +42,9 @@ export default function Hero() {
             custom={1}
             className="text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl"
           >
-            I build interfaces
+            MD. MINHAJUL ISLAM
             <br />
-            that feel <span className="text-gradient">alive</span>.
+            <span className="text-gradient text-3xl sm:text-4xl lg:text-5xl font-medium">Software & AI Solutions</span>
           </motion.h1>
 
           <motion.p
@@ -54,7 +54,7 @@ export default function Hero() {
             custom={2}
             className="mt-6 max-w-md text-lg leading-relaxed text-slate-400"
           >
-            Minhazul Islam — App Developer passionate about building high-performance mobile and modern interactive web applications with sleek UI/UX.
+            Computer Science & Engineering student at Daffodil International University skilled in Python, C, HTML, Kotlin, Android Development, and Prompt Engineering.
           </motion.p>
 
           <motion.div
@@ -67,6 +67,17 @@ export default function Hero() {
             <motion.a href="#work" className="btn-primary" whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.96 }} transition={spring}>
               View my work
               <ArrowRight size={18} />
+            </motion.a>
+            <motion.a
+              href="/resume.pdf"
+              download="Minhazul-Islam-Resume.pdf"
+              className="btn-secondary"
+              whileHover={{ y: -2, scale: 1.01 }}
+              whileTap={{ scale: 0.96 }}
+              transition={spring}
+            >
+              <Download size={18} />
+              Download CV
             </motion.a>
             <motion.a href="#contact" className="btn-secondary" whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.96 }} transition={spring}>
               Contact me

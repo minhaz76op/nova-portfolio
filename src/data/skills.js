@@ -1,20 +1,21 @@
 export const skillGroups = [
   {
-    label: 'Programming',
-    skills: ['C++', 'Java', 'Python'],
+    label: 'Programming Languages',
+    skills: ['Python', 'C Programming', 'Kotlin'],
   },
   {
-    label: 'Web',
-    skills: ['HTML5'],
+    label: 'Mobile Development',
+    skills: ['Kotlin', 'Android Development (Android Studio)'],
   },
   {
-    label: 'Mobile',
-    skills: ['App Development'],
+    label: 'Web Basics',
+    skills: ['HTML'],
   },
   {
-    label: 'Design & Tools',
-    skills: ['UI/UX Design', 'Git / GitHub'],
+    label: 'AI & Prompt Engineering',
+    skills: ['Prompt Engineering', 'AI Content Generation', 'Generative AI Tools (ChatGPT, Gemini, Claude)'],
   },
 ]
 
 export const allSkills = skillGroups.flatMap((g) => g.skills)
+

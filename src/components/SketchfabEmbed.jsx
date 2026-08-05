@@ -40,6 +40,7 @@ export default function SketchfabEmbed() {
             title="The Minion - Uchiha Itachi"
             src={sketchfabEmbedUrl}
             className="clippable-iframe"
+            loading="lazy"
             allow="autoplay; fullscreen; xr-spatial-tracking"
             execution-while-out-of-viewport
             execution-while-not-rendered
